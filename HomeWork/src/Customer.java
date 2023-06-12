@@ -20,6 +20,7 @@ public class Customer {
             System.out.println( this.name +": 소지금이 적어 주문할 수 없어 를 출력하고 아무런 행동도 하지 않습니다.");
             return;
         }
+//        11
         // 커피 계산
         this.money -= price;
         List<Coffee> coffee = barista.makeCoffee(menu);
