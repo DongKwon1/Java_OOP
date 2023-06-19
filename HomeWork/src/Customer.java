@@ -20,10 +20,12 @@ public class Customer {
             System.out.println( this.name +": 소지금이 적어 주문할 수 없어 를 출력하고 아무런 행동도 하지 않습니다.");
             return;
         }
+//        11
         // 커피 계산
         this.money -= price;
-        List<Coffee> coffee = barista.makeCoffee(menu);
-        System.out.println("고객님 께서 주문하신" + menu + price + "원 되겠습니다. 곧 준비해드리겠습니다 ");
+//        List<Coffee> coffee = barista.makeCoffee(menu);
+        barista.makeCoffee(menu);
+        System.out.println(name+" " +"고객님 께서 주문하신" + menu + price + "원 되겠습니다. 곧 준비해드리겠습니다 ");
     }
 
     public String getName() {
