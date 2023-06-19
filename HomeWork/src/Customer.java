@@ -23,8 +23,9 @@ public class Customer {
 //        11
         // 커피 계산
         this.money -= price;
-        List<Coffee> coffee = barista.makeCoffee(menu);
-        System.out.println("고객님 께서 주문하신" + menu + price + "원 되겠습니다. 곧 준비해드리겠습니다 ");
+//        List<Coffee> coffee = barista.makeCoffee(menu);
+        barista.makeCoffee(menu);
+        System.out.println(name+" " +"고객님 께서 주문하신" + menu + price + "원 되겠습니다. 곧 준비해드리겠습니다 ");
     }
 
     public String getName() {
